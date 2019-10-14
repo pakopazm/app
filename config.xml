@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.SHC.Recaudación" version="1.2.30" xmlns="http://www.w3.org/ns/widgets" defaultlocale="es-ES">
-  <icon src="imgages/escudo.png" />
+  <icon src="images/escudo.png" />
   <name>Recaudación Chiapas</name>
   <description>La Secretaria de Hacienda del estado de Chiapas, pone a disposición el sistema móvil de tesorería de impuestos y derechos.
 

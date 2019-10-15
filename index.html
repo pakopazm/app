@@ -8,30 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <script src="js/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" id="theme-style" href="css/app.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <script src="js/jquery-1.10.2.js"></script>
+
 
 </head>
+
 <body class="loaded">
     <div class="main-wrapper">
-        <div class="app header-fixed footer-fixed sidebar-fixed" id="app">
-            <header class="header">
+        <div class="app header-fixed footer-fixed sidebar-fixed header-fixed" id="app">
+            <header class="header header-fixed">
                 <div class="header-block header-block-collapse d-lg-none d-xl-none">
                     <button class="collapse-btn" id="sidebar-collapse-btn">
                         <i class="fa fa-bars"></i>
                     </button>
                 </div>
-                <div class="header-block text-center" >
-                        <span class="h5">Hacienda Móvil</h1>
-                    </div>
+                <div class="header-block">
+                    <span class="h4">&nbsp;&nbsp;Hacienda Movíl</h1>
+                </div>
                 <div class="header-block header-block-nav">
                     <ul class="nav-profile">
                         <li class="profile dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false">
-                                <div class="img"
-                                    style="background-image: url('assets/faces/default.jpg')">
+                                <div class="img" style="background-image: url('assets/faces/default.jpg')">
                                 </div>
                                 <span class="name"> pakopazm@gmail.com </span>
                             </a>
@@ -48,7 +49,7 @@
                     </ul>
                 </div>
             </header>
-            <aside class="sidebar">
+            <aside class="sidebar sidebar-fixed">
                 <div class="sidebar-container">
                     <div class="sidebar-header">
                         <div class="brand">
@@ -57,62 +58,63 @@
                     </div>
                     <nav class="menu">
                         <ul class="sidebar-menu metismenu" id="sidebar-menu">
-                            <li class="active">
+                            <li>
                                 <a href="#" onclick="LoadPage('views/home/inicio.html')"><i class="fa fa-home"></i>
                                     Inicio </a>
                             </li>
                             <li>
-                                    <a href=""><i class="fa fa-laptop"></i> Servicios en Línea <i class="fa arrow"></i></a>
-                                    <ul class="sidebar-nav collapse">
-                                        <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Pago de Derechos</a></li>
-                                        <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Constancia de No Inhabilitación</a></li>
-                                        <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Constancia de No Adeudos Fiscales</a></li>
-                                        <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Formato de Retención y Pago 5 al Millar</a></li>
-                                        <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Impuesto Predial (Ayuntamientos con Convenio)</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                        <a href=""><i class="fa fa-car"></i> Vehicular <i class="fa arrow"></i></a>
-                                        <ul class="sidebar-nav collapse">
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Presupuesto de Autos Nuevos</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Pago de Licencias de Conducir</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Flotillas Vehiculares</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Consulta de Vehículos a su Nombre</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Adeudo vehícular de otros Estados</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/vehicular/refrendo.html')">Refrendo o Cambio de Placas</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Verifica Tarjetas de Circulación Provisionales</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Consulta Vehículos Extranjeros</a></li>
-                                            <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Requisitos y Costos Vehiculares</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                            <a href=""><i class="fa fa-archive"></i> Herramientas Fiscales <i class="fa arrow"></i></a>
-                                            <ul class="sidebar-nav collapse">
-                                                <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Recargos Federales</a></li>
-                                                <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Recargos Estatales</a></li>
-                                                <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Salario Mínimo</a></li>
-                                                <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Trámites</a></li>
-                                                <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Índice Nacional de Precios al Consumidor</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                                <a href=""><i class="fa fa-check-square"></i> Pre-registro de Obligaciones<i class="fa arrow"></i></a>
-                                                <ul class="sidebar-nav collapse">
-                                                    <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Pre-registro de Contribuyentes</a></li>
-                                                    <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Formatos para Contribuyentes</a></li>
-                                                    <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Recuperar contraseña</a></li>
-                                                    <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Cambio de contraseña</a></li>
-                                                </ul>
-                                            </li>
+                                <a href=""><i class="fa fa-laptop"></i> Servicios en Línea <i class="fa arrow"></i></a>
+                                <ul class="sidebar-nav collapse">
+                                    <li><a href="#" onclick="LoadPage('views/servicios/pagoDerechos.html')">Pago de
+                                            Derechos</a></li>
+                                    <li><a href="#"
+                                            onclick="LoadPage('views/servicios/constanciaNoInhabilitacion.html')">Constancia
+                                            de No Inhabilitación</a></li>
+                                    <li><a href="#"
+                                            onclick="LoadPage('views/servicios/constanciaNoAdeudosFiscales.html')">Constancia
+                                            de No Adeudos Fiscales</a></li>
+                                    <!-- <li><a href="#" onclick="LoadPage('views/home/inicio.html')">Formato de Retención y Pago 5 al Millar</a></li> -->
+                                    <li><a href="#" onclick="LoadPage('views/servicios/impuestoPredial.html')">Impuesto
+                                            Predial (Ayuntamientos con Convenio)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-car"></i> Vehicular <i class="fa arrow"></i></a>
+                                <ul class="sidebar-nav collapse">
+                                    <li><a href="#"onclick="LoadPage('views/vehicular/presupuestoAutosNuevos.html')">Presupuesto de Autos Nuevos</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/refrendoCambioPlacas.html')">Refrendo o Cambio de Placas</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/PagoLicenciasConducir.html')">Pago de Licencias de Conducir</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/verificaTarjetasCirculacionProvisionales.html')">Verifica Tarjetas de Circulación Provisionales</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/flotillasVehiculares.html')">Flotillas Vehiculares</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/consultaVehículosExtranjeros.html')">Consulta Vehículos Extranjeros</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/vehicular/consultaVehículosNombre.html')">Consulta de Vehículos a su Nombre</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li>
+                                <a href=""><i class="fa fa-archive"></i> Herramientas Fiscales <i
+                                        class="fa arrow"></i></a>
+                                <ul class="sidebar-nav collapse">
+                                    <li><a href="#" onclick="LoadPage('views/herramientas/recargosFederales.html')">Recargos Federales</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/herramientas/recargosEstatales.html')">Recargos Estatales</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/herramientas/salarioMinimo.html')">Salario Mínimo</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/herramientas/tramites.html')">Trámites</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/herramientas/indiceNacionalPreciosConsumidor.html')">Índice Nacional de Precios al Consumidor</a></li>
+                                </ul>
+                            </li> -->
+                            <li>
+                                <a href=""><i class="fa fa-check-square"></i> Pre-registro de Obligaciones<i class="fa arrow"></i></a>
+                                <ul class="sidebar-nav collapse">
+                                    <li><a href="#" onclick="LoadPage('views/obligaciones/formatosContribuyentes.html')">Formatos para Contribuyentes</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/obligaciones/recuperarContraseña.html')">Recuperar contraseña</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/obligaciones/cambioContraseña.html')">Cambio de contraseña</a></li>
+                                </ul>
+                            </li>
                             <li>
                                 <a href=""><i class="fa fa-user"></i> Cuenta <i class="fa arrow"></i></a>
                                 <ul class="sidebar-nav collapse">
-                                    <li><a href="#" onclick="LoadPage('views/cuenta/login.html')">Iniciar Sesión</a>
-                                    </li>
+                                    <li><a href="#" onclick="LoadPage('views/cuenta/login.html')">Iniciar Sesión</a></li>
                                     <li><a href="#" onclick="LoadPage('views/cuenta/registro.html')">Registro</a></li>
-                                    <li><a href="#" onclick="LoadPage('views/cuenta/recuperar.html')">Recuperar
-                                            Contraseña</a></li>
+                                    <li><a href="#" onclick="LoadPage('views/cuenta/recuperar.html')">Recuperar Contraseña</a></li>
                                 </ul>
                             </li>
                         </ul>
